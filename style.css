@@ -61,6 +61,38 @@ section h2 {
   gap: 20px;
 }
 
+.collapsible {
+    background-color: #333;
+    color: #ff6600;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #444;
+    text-align: left;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+  background-color: #444;
+}
+
+#command-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #262626;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+#command-list.visible {
+    max-height: 1000px;
+}
+
 .command {
   background-color: #333;
   padding: 15px;
