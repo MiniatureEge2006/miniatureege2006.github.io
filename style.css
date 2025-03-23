@@ -170,5 +170,23 @@ footer p {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end;
+}
+
+.typewriter {
+  animation-fill-mode: forwards;
+}
+
+.typewriter::after {
+  content: '';
+  display: inline-block;
+  width: 0.15em;
+  height: 1em;
+  background-color: #ff6600;
+  animation: blink-caret 0.75s step-end infinite;
+  opacity: 0;
+}
+
+.typewriter.typing-done::after {
+  opacity: 0;
 }
