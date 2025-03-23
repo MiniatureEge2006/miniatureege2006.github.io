@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, typingDuration + (index * 2000));
   });
 
-  const buttons = document.querySelectorAll('button, .invite-button, .support-button');
+  const buttons = document.querySelectorAll('button, .add-button, .support-button');
   const clickSound = document.getElementById('click-sound');
 
   buttons.forEach(button => {
